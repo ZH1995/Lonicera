@@ -2,7 +2,14 @@
 class IndexController {
 
     public function indexAction() {
-        echo "index action\n";
+        require_once _SYS_PATH . 'core/DB.php';
+        require_once _SYS_PATH . 'core/Model.php';
+        require_once _APP . 'model/User.php';
+
+        $objUser = new User();
+        $objUser->id  = 2;
+        $objUser->age = 20;
+        $objUser->save();
     }
 
     public function hiAction() {
