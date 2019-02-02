@@ -8,7 +8,11 @@ $_config = array(
     'defaultAction'     => 'index',
     'UrlControllerName' => 'c',
     'UrlActionName'     => 'g',
-    'db'                => array(),
+    'db'                => array(
+        'dsn'      => 'mysql:host=127.0.0.1;dbname=lonicera',
+        'username' => 'root',
+        'password' => '123456',
+        'param'    => array(),
+    ),
     'smtp'              => array(),
 );
-
