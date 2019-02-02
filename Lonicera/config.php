@@ -1,5 +1,5 @@
 <?php
-$arrConf = array(
+$_config = array(
     'mode'              => 'debug',
     'filter'            => true,
     'charSet'           => 'utf-8',
@@ -12,4 +12,3 @@ $arrConf = array(
     'smtp'              => array(),
 );
 
-return $arrConf;
