@@ -1,0 +1,11 @@
+CREATE DATABASE lonicera;
+
+USE lonicera;
+
+CREATE TABLE IF NOT EXISTS `o2o_user` (
+    `id` INT UNSIGNED AUTO_INCREMENT,
+    `age` INT,
+    PRIMARY KEY(`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO o2o_user (age) VALUES (15);
